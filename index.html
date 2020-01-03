@@ -11,23 +11,34 @@ no">
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>SGP - Accueil</title>
 </head>
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-    </a>
-    <a class="navbar-brand" href="#">Collaborateurs</a>
-    <a class="navbar-brand" href="#">Statistiques</a>
-    <a class="navbar-brand" href="#">Activités</a>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Collaborateurs <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Statistiques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Activités</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </nav>
 <div class="row">
-    <div class="col-8"></div>
-    <div class="col-4"><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter un
+    <div class="col-4 offset-8"><a href="#" class="btn btn-primary btn-lg active" role="button"
+            aria-pressed="true">Ajouter un
             nouveau collaborateur</a></div>
 </div>
 <div class="row">
-    <div class="col-2"></div>
-    <div class="col-6">
+
+    <div class="col-6 offset-1">
         <h1>Les collaborateurs</h1>
     </div>
 </div>
@@ -36,24 +47,26 @@ no">
         <div class="col-1"></div>
         <div class="col-5">
             <fieldset disabled>
-                <div class="form-group">
+                <div class="form-group row">
                     <label for="nomPrenom">Rechercher un nom ou un prénom qui commence par:</label>
                     <input type="text" id="nomPrenom" class="form-control">
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect2">Example multiple select</label>
+                <div class="form-group row">
+                    <label for="exampleFormControlSelect2">Filtrer par département: </label>
                     <select multiple class="form-control" id="exampleFormControlSelect2">
-                      <option>Tous</option>
-                      <option>Comptabilité</option>
-                      <option>Ressources humaines</option>
-                      <option>Informatique</option>
+                        <option>Tous</option>
+                        <option>Comptabilité</option>
+                        <option>Ressources humaines</option>
+                        <option>Informatique</option>
                     </select>
-                  </div>
-                <div class="col-1"></div>
+                </div>
         </div>
-
-        <div class="col-5">
-            <div class="form-group">
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Rechercher</button>
+        </fieldset>
+        </div>
+        <div class="col-4">
+            <div class="form-group row">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
                     <label class="form-check-label" for="disabledFieldsetCheck">
@@ -61,8 +74,7 @@ no">
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Rechercher</button>
-            </fieldset>
+           
         </div>
     </div>
 </form>
