@@ -39,19 +39,59 @@ no">
     </div>
 
     <div class="countainer">
-        <form>
-            <div class="form-group row">
-                <div class="col-8 offset-2">
-                    <label for="nom" class="col-sm-2 col-form-label col-form-label-sm">Nom</label>
-                    <div class="col-sm-6">
-                        <input type="email" class="form-control form-control-sm" id="nom" placeholder="Nom">
-                    </div>
+        <div class="row">
+            <div class="col-4 offset-1">
+                <h1>Nouveau Collaborateur</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="coutainer">
+        <form class="form-group">
+            <div class="row">
+                <div class="col-2 offset-2 ">
+                    <label for="nom">Nom</label>
+                </div>
+                <div class="col-4 form-group">
+                    <input type="text" id="nom" class="form-control">
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="prenom" class="col-sm-2 col-form-label col-form-label-sm">Prénom</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control form-control-sm" id="prenom" placeholder="Prénom">
+            <div class="row">
+                <div class="col-2 offset-2">
+                    <label for="prenom">Prenom</label>
+                </div>
+                <div class="col-4 form-group">
+                    <input type="text" id="prenom" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 offset-2">
+                    <label for="dateNaissance">Date de naissance</label>
+                </div>
+                <div class="col-4 form-group">
+                    <input type="date" id="dateNaissance" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 offset-2">
+                    <label for="adresse">Adresse</label>
+                </div>
+                <div class="col-4 form-group">
+                    <textarea rows ="5" cols="50" input type="text" id="adresse" class="form-control">
+                    </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 offset-2">
+                    <label for="numerosecu">Numéro de sécurité sociale</label>
+                </div>
+                <div class="col-4 form-group">
+                    <input type="number" id="numerosecu" class="form-control" placeholder="x-xx-xx-xxx-xxx-xx">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 offset-7">
+                    <button input class="btn btn-primary" type="submit" value="Submit">Créer </button>
                 </div>
             </div>
         </form>
