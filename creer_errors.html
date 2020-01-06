@@ -53,7 +53,10 @@ no">
                     <label for="nom">Nom</label>
                 </div>
                 <div class="col-4 form-group">
-                    <input type="text" id="nom" class="form-control">
+                    <input type="text" class="form-control is-invalid" id="nom" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      Le nom est obligatoire
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -61,7 +64,10 @@ no">
                     <label for="prenom">Prenom</label>
                 </div>
                 <div class="col-4 form-group">
-                    <input type="text" id="prenom" class="form-control">
+                    <input type="text" class="form-control is-invalid" id="Prenom" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      Le prénom est obligatoire
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -69,7 +75,10 @@ no">
                     <label for="dateNaissance">Date de naissance</label>
                 </div>
                 <div class="col-4 form-group">
-                    <input type="date" id="dateNaissance" class="form-control">
+                    <input type="date" class="form-control is-invalid" id="dateNaissance" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      La date de naissance est obligatoire
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -77,7 +86,10 @@ no">
                     <label for="adresse">Adresse</label>
                 </div>
                 <div class="col-4 form-group">
-                    <textarea input type="text" id="adresse" class="form-control">
+                        <textarea class="form-control is-invalid" id="adresse"  required></textarea>
+                        <div class="invalid-feedback">
+                          L'adresse est obligatoire
+                        </div>
                     </textarea>
                 </div>
             </div>
@@ -86,7 +98,10 @@ no">
                     <label for="numeroSecu">Numéro de sécurité sociale</label>
                 </div>
                 <div class="col-4 form-group">
-                    <input type="number" id="numeroSecu" class="form-control" placeholder="x-xx-xx-xxx-xxx-xx">
+                    <input type="number" class="form-control is-invalid" id="numeroSecu" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      Le numéro de sécurité sociale est obligatoire
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -121,12 +136,6 @@ no">
             </div>
           </div>
     </div>
-    <div classe="row">
-        <div class="col offset-1">
-            <a href="creer_errors.html">Afficher erreurs formulaire</a>
-        </div>
-    </div>
-    
 
 
 
